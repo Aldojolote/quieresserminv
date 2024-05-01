@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Quieres ser mi novia?</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    #noButton {
+        animation: moveNoButton 1s infinite alternate;
+    }
+    @keyframes moveNoButton {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-5px); }
+    }
+</style>
+</head>
+<body>
+<h1>¿Quieres ser mi novia?</h1>
+<button id="yesButton" onclick="showLove()">Sí</button>
+<button id="noButton">No</button>
+<div id="loveMessage" style="display: none;">
+    <p>¡Te amo!</p>
+    <img id="loveImage" src="codes/teamopreciosa.jpg"
+</div>
+<script>
+    function showLove() {
+        document.getElementById("loveMessage").style.display = "block";
+    }
+</script>
+</body>
+</html>
